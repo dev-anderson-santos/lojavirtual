@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Code\\": "vendor\\codigos\\classes\\src"
+            "Codes\\": "vendor\\code\\php-classes\\src"
         }
     }
 }
