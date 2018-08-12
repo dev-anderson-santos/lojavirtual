@@ -63,6 +63,59 @@ $app->get("/epipabaquigrafo/logout", function() {
 	exit;
 });
 
+// Lista os usuários cadastrados
+$app->get("/epipabaquigrafo/users", function() {
+
+	User::login_verify();
+
+	$users = User::listAll();
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users", [
+		"users" => $users
+	]);
+
+});
+
+$app->get("/epipabaquigrafo/users-create", function() {
+
+	User::login_verify();
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users-create");
+
+});
+
+$app->get("/epipabaquigrafo/users/:iduser/delete", function($iduser) {
+
+	User::login_verify();
+});
+
+$app->get("/epipabaquigrafo/:iduser", function($iduser) {
+
+	User::login_verify();
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users-update");
+
+});
+
+$app->post("/admin/users/create", function() {
+
+	User::login_verify();
+});
+
+$app->post("/admin/users/:iduser", function($iduser) {
+
+	User::login_verify();
+});
+
+
+
+
 $app->run();
 
  ?>

@@ -10,6 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>AdminLTE 2 | Starter</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="/res/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/res/admin/bower_components/font-awesome/css/font-awesome.min.css">
@@ -259,7 +260,7 @@ desired effect
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+        <li class="active"><a href="/epipabaquigrafo/users"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
